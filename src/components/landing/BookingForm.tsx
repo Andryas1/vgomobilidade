@@ -6,7 +6,18 @@ const BookingForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Solicitação enviada! Entraremos em contato em breve.");
+
+    const texto = encodeURIComponent(
+      `*Nova solicitação de corrida*\n\n` +
+      `👤 Nome: ${form.nome}\n` +
+      `📞 Telefone: ${form.telefone}\n` +
+      `📧 Email: ${form.email || "Não informado"}\n` +
+      `📝 Detalhes: ${form.mensagem}`
+    );
+
+    window.open(`https://wa.me/5513978180057?text=${texto}`, "_blank");
+
+    toast.success("Redirecionando para o WhatsApp...");
     setForm({ nome: "", telefone: "", email: "", mensagem: "" });
   };
 
@@ -17,7 +28,7 @@ const BookingForm = () => {
           Agende sua <span className="text-gradient-gold">Corrida</span>
         </h2>
         <p className="text-center text-muted-foreground text-lg mb-12">
-          Preencha o formulário e entraremos em contato.
+          Preencha o formulário e envie pelo WhatsApp.
         </p>
         <form onSubmit={handleSubmit} className="space-y-6">
           <input
@@ -55,7 +66,7 @@ const BookingForm = () => {
             type="submit"
             className="w-full bg-gold hover:bg-gold-dark text-navy font-bold text-xl px-8 py-5 rounded-xl transition-all hover:scale-[1.02] shadow-lg shadow-gold/20"
           >
-            Agendar Corrida
+            Enviar pelo WhatsApp
           </button>
         </form>
       </div>
