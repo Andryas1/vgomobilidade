@@ -27,14 +27,6 @@ const HeroSection = () => {
           >
             Agendar Corrida
           </a>
-          <a
-            href="https://play.google.com/store/apps/details?id=br.com.vgo.passenger.drivermachine"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-primary-foreground/10 backdrop-blur border-2 border-gold/50 text-primary-foreground hover:bg-gold/20 font-bold text-lg px-10 py-5 rounded-xl transition-all hover:scale-105"
-          >
-            📲 Baixar na Play Store
-          </a>
         </div>
       </div>
     </section>
