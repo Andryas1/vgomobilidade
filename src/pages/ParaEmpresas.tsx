@@ -103,7 +103,7 @@ const ParaEmpresas = () => {
             <a href="mailto:vgomobilidade@gmail.com" className="flex items-center gap-2 hover:text-secondary transition-colors">
               <Mail size={18} /> vgomobilidade@gmail.com
             </a>
-            <a href="https://wa.me/5511999999999" className="flex items-center gap-2 hover:text-secondary transition-colors">
+            <a href="https://wa.me/5513978180057" className="flex items-center gap-2 hover:text-secondary transition-colors">
               <Phone size={18} /> WhatsApp
             </a>
           </div>
