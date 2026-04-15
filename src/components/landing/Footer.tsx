@@ -1,28 +1,67 @@
 import { Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-navy border-t border-gold/15 py-8">
-      <div className="container mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-primary-foreground/50 text-sm">
-          © 2026 VGo Mobilidade Corporativa. Todos os direitos reservados.
-        </p>
-        <div className="flex items-center gap-4">
-          <a
-            href="https://instagram.com/vg0_013"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary-foreground/50 hover:text-gold transition-colors"
-            aria-label="Instagram"
-          >
-            <Instagram className="w-5 h-5" />
-          </a>
-          <a
-            href="mailto:vgomobilidade@gmail.com"
-            className="text-primary-foreground/50 hover:text-gold transition-colors text-sm"
-          >
-            vgomobilidade@gmail.com
-          </a>
+    <footer className="bg-navy border-t border-gold/15 py-12">
+      <div className="container mx-auto px-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+          {/* Brand */}
+          <div>
+            <Link to="/" className="text-2xl font-bold tracking-tight">
+              <span className="text-primary-foreground">V</span>
+              <span className="text-gradient-gold">Go</span>
+              <span className="text-primary-foreground text-sm font-light ml-2">Mobilidade</span>
+            </Link>
+            <p className="text-primary-foreground/50 text-sm mt-3 leading-relaxed">
+              Transporte corporativo com segurança, tecnologia e conforto. Desde 2021.
+            </p>
+          </div>
+
+          {/* Links */}
+          <div>
+            <h4 className="text-primary-foreground font-semibold mb-4">Navegação</h4>
+            <div className="flex flex-col gap-2">
+              <a href="#sobre" className="text-primary-foreground/50 hover:text-gold transition-colors text-sm">Sobre</a>
+              <a href="#vantagens" className="text-primary-foreground/50 hover:text-gold transition-colors text-sm">Vantagens</a>
+              <a href="#agendar" className="text-primary-foreground/50 hover:text-gold transition-colors text-sm">Agendar</a>
+              <a href="#contato" className="text-primary-foreground/50 hover:text-gold transition-colors text-sm">Contato</a>
+            </div>
+          </div>
+
+          {/* Pages */}
+          <div>
+            <h4 className="text-primary-foreground font-semibold mb-4">Soluções</h4>
+            <div className="flex flex-col gap-2">
+              <Link to="/para-empresas" className="text-primary-foreground/50 hover:text-gold transition-colors text-sm">Para Empresas</Link>
+              <Link to="/seja-motorista" className="text-primary-foreground/50 hover:text-gold transition-colors text-sm">Seja um Motorista</Link>
+            </div>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="text-primary-foreground font-semibold mb-4">Contato</h4>
+            <div className="flex flex-col gap-2">
+              <a href="mailto:vgomobilidade@gmail.com" className="text-primary-foreground/50 hover:text-gold transition-colors text-sm">
+                vgomobilidade@gmail.com
+              </a>
+              <a href="https://wa.me/5513978180057" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-gold transition-colors text-sm">
+                (13) 97818-0057
+              </a>
+              <a href="https://instagram.com/vg0_013" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-gold transition-colors text-sm flex items-center gap-2">
+                <Instagram className="w-4 h-4" /> @vg0_013
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-gold/15 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-primary-foreground/40 text-sm">
+            © 2021–2026 VGo Mobilidade Corporativa. Todos os direitos reservados.
+          </p>
+          <p className="text-primary-foreground/30 text-xs">
+            Desde 2021
+          </p>
         </div>
       </div>
     </footer>
