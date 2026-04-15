@@ -1,5 +1,3 @@
-import { Car, Shield, Smartphone, Clock, MapPin, CreditCard } from "lucide-react";
-
 import { Car, Shield, Smartphone, Clock, MapPin, CreditCard, DollarSign } from "lucide-react";
 
 const advantages = [
