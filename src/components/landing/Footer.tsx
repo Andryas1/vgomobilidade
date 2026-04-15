@@ -11,10 +11,9 @@ const Footer = () => {
             <Link to="/" className="text-2xl font-bold tracking-tight">
               <span className="text-primary-foreground">V</span>
               <span className="text-gradient-gold">Go</span>
-              <span className="text-primary-foreground text-sm font-light ml-2">Mobilidade</span>
             </Link>
             <p className="text-primary-foreground/50 text-sm mt-3 leading-relaxed">
-              Transporte corporativo com segurança, tecnologia e conforto. Desde 2021.
+              Tecnologia Corporativa
             </p>
           </div>
 
@@ -55,11 +54,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gold/15 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="border-t border-gold/15 pt-6 text-center">
           <p className="text-primary-foreground/40 text-sm">
-            © 2021–2026 VGo Mobilidade Corporativa. Todos os direitos reservados.
-          </p>
-          <p className="text-primary-foreground/30 text-xs">
             Desde 2021
           </p>
         </div>

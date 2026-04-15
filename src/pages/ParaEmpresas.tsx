@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Building2, ArrowLeft, Phone, Mail, MapPin } from "lucide-react";
+import { Building2, ArrowLeft, Phone, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ParaEmpresas = () => {
@@ -18,7 +18,6 @@ const ParaEmpresas = () => {
 
   return (
     <div className="min-h-screen bg-primary text-primary-foreground">
-      {/* Header */}
       <div className="bg-primary border-b border-secondary/20">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 text-primary-foreground/80 hover:text-secondary transition-colors">
@@ -33,44 +32,19 @@ const ParaEmpresas = () => {
         </div>
       </div>
 
-      {/* Hero */}
       <section className="py-20 px-6">
-        <div className="container mx-auto max-w-4xl text-center">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-secondary/20 mb-8">
-            <Building2 size={40} className="text-secondary" />
-          </div>
-          <h1 className="text-4xl md:text-5xl font-black mb-6">
-            Transporte Corporativo <span className="text-gradient-gold">Premium</span>
-          </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/70 max-w-2xl mx-auto leading-relaxed">
-            Soluções completas de mobilidade para sua empresa. Segurança, pontualidade e conforto para seus colaboradores.
-          </p>
-        </div>
-      </section>
-
-      {/* Benefícios */}
-      <section className="pb-16 px-6">
-        <div className="container mx-auto max-w-5xl grid md:grid-cols-3 gap-8">
-          {[
-            { title: "Gestão Centralizada", desc: "Painel completo para gerenciar corridas, relatórios e custos da sua empresa." },
-            { title: "Segurança Total", desc: "Motoristas verificados, rastreamento em tempo real e seguro para passageiros." },
-            { title: "Economia", desc: "Planos corporativos com preços competitivos e faturamento mensal." },
-          ].map((item) => (
-            <div key={item.title} className="bg-primary-foreground/5 border border-secondary/20 rounded-2xl p-8">
-              <h3 className="text-xl font-bold text-secondary mb-3">{item.title}</h3>
-              <p className="text-primary-foreground/70 leading-relaxed">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Formulário */}
-      <section className="pb-24 px-6">
         <div className="container mx-auto max-w-2xl">
-          <div className="bg-primary-foreground/5 border border-secondary/20 rounded-2xl p-8 md:p-12">
-            <h2 className="text-2xl font-bold mb-2">Solicite uma proposta</h2>
-            <p className="text-primary-foreground/60 mb-8">Preencha o formulário e entraremos em contato.</p>
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-secondary/20 mb-8">
+              <Building2 size={40} className="text-secondary" />
+            </div>
+            <h1 className="text-4xl md:text-5xl font-black mb-4">
+              Para <span className="text-gradient-gold">Empresas</span>
+            </h1>
+            <p className="text-primary-foreground/60">Preencha o formulário e entraremos em contato.</p>
+          </div>
 
+          <div className="bg-primary-foreground/5 border border-secondary/20 rounded-2xl p-8 md:p-12">
             {enviado ? (
               <div className="text-center py-12">
                 <p className="text-secondary text-xl font-bold mb-2">✅ Formulário aberto no seu email!</p>
@@ -91,21 +65,6 @@ const ParaEmpresas = () => {
                 </button>
               </form>
             )}
-          </div>
-        </div>
-      </section>
-
-      {/* Contato direto */}
-      <section className="pb-16 px-6">
-        <div className="container mx-auto max-w-2xl text-center">
-          <p className="text-primary-foreground/50 mb-4">Ou entre em contato diretamente:</p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-primary-foreground/70">
-            <a href="mailto:vgomobilidade@gmail.com" className="flex items-center gap-2 hover:text-secondary transition-colors">
-              <Mail size={18} /> vgomobilidade@gmail.com
-            </a>
-            <a href="https://wa.me/5513978180057" className="flex items-center gap-2 hover:text-secondary transition-colors">
-              <Phone size={18} /> WhatsApp
-            </a>
           </div>
         </div>
       </section>

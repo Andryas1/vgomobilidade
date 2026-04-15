@@ -15,14 +15,15 @@ const PartnersSection = () => {
             href="http://mobicity.com.br"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary-foreground/10 border border-primary-foreground/20 rounded-2xl p-8 hover:border-secondary/50 transition-all hover:-translate-y-1"
+            className="bg-primary-foreground/5 border border-secondary/20 rounded-2xl px-12 py-10 hover:border-secondary/50 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-secondary/10"
           >
             <img
               src={mobicityLogo}
-              alt="Mobicity - Parceiro VGo Mobilidade"
-              className="h-16 md:h-20 w-auto object-contain"
+              alt="Mobicity - Parceiro VGo"
+              className="h-24 md:h-32 w-auto object-contain"
               loading="lazy"
             />
+            <p className="text-primary-foreground/50 text-sm mt-4 text-center">Mobicity</p>
           </a>
         </div>
       </div>

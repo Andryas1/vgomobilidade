@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const CTASection = () => {
   return (
     <section className="py-24 md:py-32 bg-background">
@@ -10,20 +8,12 @@ const CTASection = () => {
         <p className="text-muted-foreground text-lg mb-12 max-w-xl mx-auto">
           Entre em contato e transforme a sua relação com a mobilidade corporativa.
         </p>
-        <div className="flex flex-col sm:flex-row gap-5 justify-center">
-          <Link
-            to="/para-empresas"
-            className="bg-secondary hover:bg-accent text-accent-foreground font-bold text-lg px-10 py-5 rounded-xl transition-all hover:scale-105"
-          >
-            Sou uma empresa
-          </Link>
-          <Link
-            to="/seja-motorista"
-            className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-accent-foreground font-bold text-lg px-10 py-5 rounded-xl transition-all hover:scale-105"
-          >
-            Quero ser motorista
-          </Link>
-        </div>
+        <a
+          href="#agendar"
+          className="bg-secondary hover:bg-accent text-accent-foreground font-bold text-lg px-10 py-5 rounded-xl transition-all hover:scale-105 inline-block"
+        >
+          Agendar Corrida
+        </a>
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Car, ArrowLeft, Phone, Mail } from "lucide-react";
+import { Car, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const SejaMotorista = () => {
@@ -33,40 +33,18 @@ const SejaMotorista = () => {
       </div>
 
       <section className="py-20 px-6">
-        <div className="container mx-auto max-w-4xl text-center">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-secondary/20 mb-8">
-            <Car size={40} className="text-secondary" />
-          </div>
-          <h1 className="text-4xl md:text-5xl font-black mb-6">
-            Seja um <span className="text-gradient-gold">Motorista VGo</span>
-          </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/70 max-w-2xl mx-auto leading-relaxed">
-            Faça parte da nossa equipe de motoristas parceiros. Ganhe mais com corridas corporativas e tenha estabilidade.
-          </p>
-        </div>
-      </section>
-
-      <section className="pb-16 px-6">
-        <div className="container mx-auto max-w-5xl grid md:grid-cols-3 gap-8">
-          {[
-            { title: "Ganhos Atrativos", desc: "Corridas corporativas com valores acima da média do mercado." },
-            { title: "Agenda Flexível", desc: "Você escolhe seus horários e regiões de atuação." },
-            { title: "Suporte Completo", desc: "Treinamento, suporte 24h e ferramentas para facilitar seu dia a dia." },
-          ].map((item) => (
-            <div key={item.title} className="bg-primary-foreground/5 border border-secondary/20 rounded-2xl p-8">
-              <h3 className="text-xl font-bold text-secondary mb-3">{item.title}</h3>
-              <p className="text-primary-foreground/70 leading-relaxed">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="pb-24 px-6">
         <div className="container mx-auto max-w-2xl">
-          <div className="bg-primary-foreground/5 border border-secondary/20 rounded-2xl p-8 md:p-12">
-            <h2 className="text-2xl font-bold mb-2">Cadastre-se como motorista</h2>
-            <p className="text-primary-foreground/60 mb-8">Preencha seus dados e entraremos em contato.</p>
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-secondary/20 mb-8">
+              <Car size={40} className="text-secondary" />
+            </div>
+            <h1 className="text-4xl md:text-5xl font-black mb-4">
+              Seja um <span className="text-gradient-gold">Motorista VGo</span>
+            </h1>
+            <p className="text-primary-foreground/60">Preencha seus dados e entraremos em contato.</p>
+          </div>
 
+          <div className="bg-primary-foreground/5 border border-secondary/20 rounded-2xl p-8 md:p-12">
             {enviado ? (
               <div className="text-center py-12">
                 <p className="text-secondary text-xl font-bold mb-2">✅ Formulário aberto no seu email!</p>
@@ -88,20 +66,6 @@ const SejaMotorista = () => {
                 </button>
               </form>
             )}
-          </div>
-        </div>
-      </section>
-
-      <section className="pb-16 px-6">
-        <div className="container mx-auto max-w-2xl text-center">
-          <p className="text-primary-foreground/50 mb-4">Ou entre em contato diretamente:</p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-primary-foreground/70">
-            <a href="mailto:vgomobilidade@gmail.com" className="flex items-center gap-2 hover:text-secondary transition-colors">
-              <Mail size={18} /> vgomobilidade@gmail.com
-            </a>
-            <a href="https://wa.me/5513978180057" className="flex items-center gap-2 hover:text-secondary transition-colors">
-              <Phone size={18} /> WhatsApp
-            </a>
           </div>
         </div>
       </section>
