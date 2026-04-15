@@ -20,7 +20,7 @@ const ParallaxSection = () => {
           Baixe o app VGo e transforme o transporte da sua empresa.
         </p>
         <a
-          href="https://play.google.com/store"
+          href="https://play.google.com/store/apps/details?id=br.com.vgo.passenger.drivermachine"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-gold hover:bg-gold-dark text-navy font-bold text-lg px-12 py-5 rounded-xl transition-all hover:scale-105 shadow-lg shadow-gold/30"
