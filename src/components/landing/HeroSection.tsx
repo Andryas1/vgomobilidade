@@ -12,11 +12,13 @@ const HeroSection = () => {
     >
       <div className="absolute inset-0 bg-navy/70" />
       <div className="relative z-10 container mx-auto px-6 py-32">
-        <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
+        <h1 className="text-5xl md:text-7xl font-black mb-2 leading-tight">
           <span className="text-primary-foreground">V</span>
           <span className="text-gradient-gold">Go</span>
-          <span className="text-primary-foreground"> Mobilidade</span>
         </h1>
+        <p className="text-lg md:text-xl text-primary-foreground/60 font-light mb-6 tracking-wide">
+          Tecnologia Corporativa
+        </p>
         <p className="text-xl md:text-2xl text-primary-foreground/80 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
           Transporte corporativo com segurança, tecnologia e conforto para sua empresa.
         </p>

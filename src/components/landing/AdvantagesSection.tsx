@@ -1,5 +1,7 @@
 import { Car, Shield, Smartphone, Clock, MapPin, CreditCard } from "lucide-react";
 
+import { Car, Shield, Smartphone, Clock, MapPin, CreditCard, DollarSign } from "lucide-react";
+
 const advantages = [
   {
     icon: Car,
@@ -9,7 +11,7 @@ const advantages = [
   {
     icon: Shield,
     title: "Segurança",
-    desc: "Motoristas verificados e viagens monitoradas do início ao fim.",
+    desc: "Motoristas verificados, seguro individual (motorista/passageiro). Viagens monitoradas do início ao fim. Veículos com vistorias periódicas minuciosas que garantem a segurança da sua viagem.",
   },
   {
     icon: Smartphone,
@@ -22,6 +24,11 @@ const advantages = [
     desc: "Agendamento prévio e acompanhamento em tempo real do seu transporte.",
   },
   {
+    icon: DollarSign,
+    title: "Centro de Custos",
+    desc: "Redução de custos com frota própria, locados e táxi aliados à prática de gestão eficientes que geram economia com a qualidade da mobilidade.",
+  },
+  {
     icon: MapPin,
     title: "Cobertura Regional",
     desc: "Atendimento em diversas regiões com expansão contínua.",
@@ -29,7 +36,7 @@ const advantages = [
   {
     icon: CreditCard,
     title: "Pagamento Fácil",
-    desc: "Diversas formas de pagamento integradas no app para sua comodidade.",
+    desc: "Diversas formas de pagamento integradas no app para sua comodidade como voucher e entre outros.",
   },
 ];
 
